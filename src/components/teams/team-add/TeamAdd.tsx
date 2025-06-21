@@ -33,9 +33,9 @@ const TeamAdd = ({
     resolver: zodResolver(TeamFormValidationSchema),
     mode: "onTouched",
     defaultValues: {
-      name: "myteam",
-      region: "Asia",
-      country: "MM",
+      name: "",
+      region: "",
+      country: "",
     },
   });
 
