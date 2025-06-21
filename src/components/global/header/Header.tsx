@@ -33,8 +33,14 @@ const Header = () => {
     toast.success("Logged out successfully");
   };
   return (
-    <div className="bg-background sticky z-50 top-0">
-      <nav className="flex justify-between items-center max-w-7xl mx-auto p-2">
+    <div
+      className="bg-background sticky z-50 top-0"
+      suppressHydrationWarning={true}
+    >
+      <nav
+        className="flex justify-between items-center max-w-7xl mx-auto p-2"
+        suppressHydrationWarning={true}
+      >
         <div className="flex gap-3 items-center">
           <Logo />
           <NavMenus />
