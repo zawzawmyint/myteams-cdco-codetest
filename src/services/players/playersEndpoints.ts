@@ -3,7 +3,7 @@ import { ApiResponse, Player } from "@/utils/definitations/definitations";
 export type PlayersResponse = ApiResponse<Player[]>;
 export async function fetchAllPlayers(
   page: number = 1,
-  perPage: number = 20
+  perPage: number = 10
 ): Promise<PlayersResponse> {
   const pagination = page && perPage ? `?page=${page}&per_page=${perPage}` : "";
   const endpoint = `https://api.balldontlie.io/v1/players${pagination}`;
