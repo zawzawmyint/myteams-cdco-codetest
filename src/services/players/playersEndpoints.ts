@@ -9,7 +9,8 @@ export async function fetchAllPlayers(
   const endpoint = `https://api.balldontlie.io/v1/players${pagination}`;
 
   // You need to get an API key from https://www.balldontlie.io/
-  const API_KEY = process.env.BALLDONTLIE_API_KEY || "your-api-key-here";
+  const API_KEY =
+    process.env.BALLDONTLIE_API_KEY || "376d2b3e-de20-4f0d-af3e-0075677ab9c3";
 
   try {
     const response = await fetch(endpoint, {
