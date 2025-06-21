@@ -25,6 +25,12 @@ My Team is a web application for managing sports teams and players. It provides 
 - State management (in src/lib/features )
 - Utility functions and validation (in src/utils )
 
+### Environment Variables
+
+The project uses environment variables for configuration. Create a .env file in the root directory and define the following variables:
+
+- `BALLDONTLIE_API_KEY`: API key for BALLDONTLIE.
+
 ### Installation
 
 To set up the project locally, follow these steps:
