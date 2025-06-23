@@ -24,7 +24,7 @@ export interface Player {
 
 // Team type (referenced in Player.team)
 export interface Team {
-  id: number;
+  id: string;
   name: string;
   playerCount: number;
   region: string;

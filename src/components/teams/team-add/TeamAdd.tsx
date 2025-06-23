@@ -58,7 +58,7 @@ const TeamAdd = ({
       try {
         // Generate a unique ID (you can use uuid, timestamp, or any other method)
         const newTeam: Team = {
-          id: Date.now(), // or crypto.randomUUID() if available
+          id: crypto.randomUUID(), // or crypto.randomUUID() if available
           name,
           region,
           country,
