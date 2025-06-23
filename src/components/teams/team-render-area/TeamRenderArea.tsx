@@ -23,11 +23,19 @@ const TeamRenderArea = ({
       <FormField
         control={form.control}
         name="name"
-        disabled={isEdit}
+        // disabled={isEdit}
         render={({ field }) => (
           <FormItem>
             <FormControl>
-              <Input placeholder={"Team Name"} {...field} className="w-full" />
+              <Input
+                placeholder={"Team Name"}
+                {...field}
+                className={`w-full ${
+                  isEdit ? "bg-gray-100 cursor-not-allowed" : ""
+                }`}
+                tabIndex={isEdit ? -1 : 0}
+                readOnly={isEdit}
+              />
             </FormControl>
             <FormMessage />
           </FormItem>
