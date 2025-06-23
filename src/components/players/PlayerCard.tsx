@@ -12,7 +12,7 @@ import { Button } from "../ui/button";
 
 interface PlayerCardProps {
   player: Player;
-  teamId?: number | null;
+  teamId?: string | null;
   isTeam?: boolean;
 }
 

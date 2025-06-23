@@ -23,7 +23,7 @@ const TeamActions = ({
   teamId,
   teamPlayers,
 }: {
-  teamId: number;
+  teamId: string;
   teamPlayers: Player[];
 }) => {
   const router = useRouter();

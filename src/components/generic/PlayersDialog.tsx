@@ -13,7 +13,7 @@ import { Plus, UserPlus } from "lucide-react";
 import { PlayerCard } from "../players/PlayerCard";
 import { ScrollArea } from "../ui/scroll-area";
 
-export function PlayersDialog({ teamId }: { teamId: number }) {
+export function PlayersDialog({ teamId }: { teamId: string }) {
   const players = useAppSelector((state) => state.players.players);
 
   return (
